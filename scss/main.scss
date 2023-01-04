@@ -1,0 +1,61 @@
+
+@import "mixin.scss";
+@import "flexsize.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .flex-container {
+    height: $flexheigth;
+    width: $flexwidth;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex-item {
+   @include flexitem; 
+  }
+
+  .item-1 {
+    @include item-1;
+    font-size: $flexsize;
+    &:hover {
+        color:$flexcolor ;
+    }
+  }
+  .text {
+    font-size: $flexsizemore;
+    color: $flexcolortext;
+  }
+  .item-2 {
+    @include item-2;
+    font-size: $flexsize;
+  }
+  .text-2 {
+    color: $flexcolortext;
+    font-size: $flexsizemore;
+  }
+  .item-3{
+    @include item-3;
+    font-size: $flexsize;
+  }
+  .text-3 {
+    color: $flexcolortext;
+    font-size: $flexsizemore;
+  }
+  .item-4{
+    @include item-4;
+    font-size: $flexsize;
+  }
+  .text-4 {
+    color: $flexcolortext;
+    font-size: $flexsizemore;
+  }
+
+  @media screen and (max-width:600px){
+    .flex-container {
+        flex-direction: column;
+    }
+  }

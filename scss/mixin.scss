@@ -1,0 +1,19 @@
+@mixin flexitem {
+    padding: 10px;
+    font: 90 60px "Roboto", sans-serif;
+    color: #fff;
+    text-align: center;
+    flex: 1;
+}
+@mixin item-1 {
+    background: linear-gradient(45deg, #43e97b, #38f9d7);
+}
+@mixin item-2 {
+    background: linear-gradient(45deg, #e9a443, #fdcb03);
+}
+@mixin item-3 {
+    background: linear-gradient(45deg, #7243e9, #040764);
+}
+@mixin item-4 {
+    background: linear-gradient(45deg, #e94343, #f90505cc);
+}
